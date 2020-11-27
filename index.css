@@ -1,0 +1,48 @@
+.container {
+    width: 60vw;
+    margin: auto;
+    border: 1px solid grey;
+}
+
+header {
+    padding: 10px;
+}
+
+.title {
+    display: inline-block;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
+.list-item {
+    margin: 5px;
+}
+
+.nav {
+    display: inline-block;
+}
+
+main {
+    padding: 10px;
+}
+
+.home-page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.about-me {
+    flex: 2;
+}
