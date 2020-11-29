@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 
+:root {
+    --heading-size: 20px;
+    --primary-color: rgba(232, 53, 86, 1);
+    --secondary-color:  rgb(97, 208, 212);
+    --text-color: #4D4D4D;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,23 +14,23 @@ body {
     margin: 0;
     font-family: 'EB Garamond', serif;
     background-color: #eae5e5;
+    color: var(--text-color);
 }
 
-:root {
-    --heading-size: 20px;
-    --primary-color: rgba(232, 53, 86, 1);
-    --secondary-color:  rgb(97, 208, 212);
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 h1 {
     /* font-size: 80px; */
-    font-size: 4rem;
+    font-size: 4.3rem;
     margin: 0;
 }
 
 h2 {
     /* font-size: 50px; */
-    font-size: 2.5rem;
+    font-size: 2.9rem;
 }
 
 
@@ -73,6 +80,7 @@ footer {
     margin: 0 auto;
     list-style: none;
     justify-content: space-between;
+    color: white;
 }
 
 .contact-me-item {
@@ -85,6 +93,8 @@ footer {
     /* width: 2.2rem; */
     margin: 0 10px;
     font-size: 1.8rem;
+    color: var(--secondary-color);
+    padding: 3px 0;
     /* border-radius: 50%; */
     /* background-color: blue; */
 }
@@ -93,6 +103,10 @@ footer {
     display: none !important;
 }
 
-a {
-    text-decoration: none;
+.list-item .activeLink {
+    color: var(--secondary-color);
+}
+
+.contact-me-item .follow-me-icons i{
+    margin-right: 8px;
 }

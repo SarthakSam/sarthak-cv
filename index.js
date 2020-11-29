@@ -12,8 +12,10 @@ function changePage(hash) {
     pagesArr.forEach(page => {
         // page.style.display = "none";
         page.classList.add("displayNone");
+        page.classList.remove("activeLink");
     });
     let node = document.querySelector(`.${hash}`)
     node.classList.remove("displayNone")
+    node.classList.add('activeLink');
     // node.style.display = "initial";
 }
