@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     let hash = document.location.hash;
+    if(!hash)
+        changePage("home");
+    else
     changePage(hash.substring(1));
 }) 
 
