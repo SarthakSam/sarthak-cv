@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    font-family: 'EB Garamond', serif;
 }
 
 .container {
@@ -37,31 +40,6 @@ main {
     padding: 10px;
 }
 
-.profile-image img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-@media( min-width: 768px) {
-    .home-page {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .profile-image {
-        flex-basis: 40%;
-    }
-    
-    .about-me {
-        flex-basis: 50%;
-    }
-
-    .contact-me {
-        display: flex;
-    }
-
-}
-
 /* footer */
 
 footer {
@@ -88,4 +66,8 @@ footer {
     font-size: 1.8rem;
     /* border-radius: 50%; */
     /* background-color: blue; */
+}
+
+.displayNone {
+    display: none !important;
 }

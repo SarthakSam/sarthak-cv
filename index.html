@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarthak-kapoor</title>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="home-section.css">
     <link rel="stylesheet" href="resume-section.css">
     <link rel="stylesheet" href="projects-section.css">
 </head>
@@ -19,14 +21,14 @@
             </div>
             <nav class="nav">
                 <ul class="list ">
-                    <li class="list-item">Home</li>
-                    <li class="list-item">Resume</li>
-                    <li class="list-item">Project</li>
-                    <li class="list-item">Contact</li>
+                    <li class="list-item" onclick="changePage('home')"><a href="#home"> Home</a></li>
+                    <li class="list-item" onclick="changePage('resume')"><a href="#resume"> Resume</a></li>
+                    <li class="list-item" onclick="changePage('projects')"><a href="#projects" > Projects</a></li>
+                    <li class="list-item" onclick="changePage('contact')"><a href="#contact"> Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <!-- <main class="home-page">
+        <main class="home page">
             <aside class="profile-image">
                 <img src="./images/sarthak-kapoor.jpg" alt="">
             </aside>
@@ -37,8 +39,8 @@
                     Fugit in laudantium officia dicta molestiae ipsum eum fugiat nesciunt esse? 
                     Odit et illum deserunt perspiciatis, laboriosam vel molestias ipsum labore amet.</p>
             </section>
-        </main>     -->
-        <!-- <main class="resume">
+        </main>    
+        <main class="resume page">
             <h1>Resume</h1>
             <div class="resume-body">
                 <section class="left">
@@ -147,8 +149,8 @@
                     </div>
                 </aside>    
             </div>
-        </main> -->
-        <main class="projects">
+        </main>
+        <main class="projects page">
             <h1>Latest Projects</h1>
             <hr>
             <section class="horizontal-card section">

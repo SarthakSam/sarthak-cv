@@ -1,0 +1,24 @@
+.profile-image img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media( min-width: 768px) {
+    .home {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .profile-image {
+        flex-basis: 40%;
+    }
+    
+    .about-me {
+        flex-basis: 50%;
+    }
+
+    .contact-me {
+        display: flex;
+    }
+
+}
