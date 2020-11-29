@@ -6,12 +6,31 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'EB Garamond', serif;
+    background-color: #eae5e5;
 }
+
+:root {
+    --heading-size: 20px;
+    --primary-color: rgba(232, 53, 86, 1);
+    --secondary-color:  rgb(97, 208, 212);
+}
+
+h1 {
+    /* font-size: 80px; */
+    font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    /* font-size: 50px; */
+    font-size: 2.5rem;
+}
+
 
 .container {
     width: 60vw;
     margin: auto;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     flex: 1 0 auto
 }
 
@@ -26,10 +45,12 @@ header {
 .list {
     list-style: none;
     display: flex;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .list-item {
-    margin: 5px;
+    margin: 5px 8px;
 }
 
 .nav {
@@ -43,7 +64,7 @@ main {
 /* footer */
 
 footer {
-    background-color: pink;
+    background-color: var(--primary-color);
     flex-shrink: 0;
 }
 
@@ -70,4 +91,8 @@ footer {
 
 .displayNone {
     display: none !important;
+}
+
+a {
+    text-decoration: none;
 }

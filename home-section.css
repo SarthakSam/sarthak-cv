@@ -6,15 +6,16 @@
 @media( min-width: 768px) {
     .home {
         display: flex;
+        margin-top: 20px;
         justify-content: space-between;
     }
     
     .profile-image {
-        flex-basis: 40%;
+        flex-basis: 45%;
     }
     
     .about-me {
-        flex-basis: 50%;
+        flex-basis: 45%;
     }
 
     .contact-me {
