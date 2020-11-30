@@ -12,10 +12,15 @@ function changePage(hash) {
     pagesArr.forEach(page => {
         // page.style.display = "none";
         page.classList.add("displayNone");
-        page.classList.remove("activeLink");
     });
     let node = document.querySelector(`.${hash}`)
     node.classList.remove("displayNone")
-    node.classList.add('activeLink');
-    // node.style.display = "initial";
+
+    let links = document.getElementsByClassName('list-item');
+    let linksArr = Array.prototype.slice.call(links);
+    linksArr.forEach( link => {
+        link.classList.remove('activeLink');
+    })
+    let link = document.querySelector(`.${hash}-link`);
+    link.classList.add('activeLink');
 }
