@@ -1,12 +1,13 @@
 .profile-image img {
     width: 100%;
     border-radius: 50%;
+    height: 50vh;
 }
 
 @media( min-width: 768px) {
     .home {
         display: flex;
-        margin-top: 20px;
+        margin-top: 10px;
         justify-content: space-between;
     }
     
