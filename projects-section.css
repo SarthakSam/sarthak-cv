@@ -5,7 +5,8 @@
 }
 
 .project-image {
-    flex-basis: 50%;
+    flex-basis: 400px;
+    margin: 0 30px;
 }
 
 .project-image img {
@@ -29,4 +30,36 @@
     width: 100px;
     border-radius: 100px;
     line-height: 100px;
+}
+
+@media( max-width: 550px) {
+    .horizontal-card {
+        display: block;
+    }
+
+    .horizontal-card hr{
+        display: none;
+    }
+
+    .horizontal-card .section-title {
+        display: none;
+    }
+
+    .horizontal-card .project-image {
+        margin: 0;
+    }
+
+    .horizontal-card .project-image img {
+        height: 250px;        
+    }
+}
+
+@media( max-width: 750px) {
+    .blogs .horizontal-card {
+        display: block;
+    }
+
+    .blogs .horizontal-card hr {
+        display: none;
+    }
 }
