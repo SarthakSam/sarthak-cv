@@ -10,11 +10,14 @@ nav {
 
 .list {
     list-style: none;
+    display: flex;
+    /* margin-right: 10px; */
+}
+
+nav .list {
     float: right;
     font-size: 1.3rem;
     font-weight: 700;
-    display: flex;
-    /* margin-right: 10px; */
 }
 
 .list-item {
@@ -60,7 +63,7 @@ nav a {
         color: white;
     }
 
-    .list {
+    nav .list {
         transition: 0.25s;
         left: -150vw;
         display: block;
@@ -73,7 +76,7 @@ nav a {
         padding: 0;
     }
 
-    .list-item {
+    nav .list .list-item {
         text-align: center;
         padding: 10px;
     }
