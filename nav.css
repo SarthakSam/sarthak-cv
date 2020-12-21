@@ -1,6 +1,6 @@
 nav {
-    padding: 20px 0;
-    margin: 20px 0;
+    padding: 40px 0;
+    /* margin: 20px 0; */
 }
 
 .title {
@@ -13,12 +13,13 @@ nav {
     float: right;
     font-size: 1.3rem;
     font-weight: 700;
+    display: flex;
     /* margin-right: 10px; */
 }
 
 .list-item {
     margin: 5px 8px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 nav a {
@@ -54,7 +55,22 @@ nav a {
 
 @media(max-width: 725px) {
     .list {
-        display: none;
+        transition: 0.25s;
+        left: -150vw;
+        display: block;
+        float: none;
+        position: fixed;
+        width: 100vw;
+        background-color: var(--primary-color);
+        height: 100%;
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .list-item {
+        text-align: center;
+        color: white;
+        padding: 10px;
     }
 
     #list-icon {
@@ -62,6 +78,6 @@ nav a {
     }
 
     #list-checkbox:checked ~ .list {
-        display: block;
+        left: 0;
     }   
 }

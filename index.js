@@ -23,4 +23,7 @@ function changePage(hash) {
     })
     let link = document.querySelector(`.${hash}-link`);
     link.classList.add('activeLink');
+
+    const listIcon = document.querySelector("#list-icon");
+    listIcon.click();
 }
