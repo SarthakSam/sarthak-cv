@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     let hash = document.location.hash;
     if(!hash)
-        changePage("home");
+        loadHomePage();
     else
     changePage(hash.substring(1));
 }) 
@@ -10,7 +10,6 @@ function changePage(hash) {
     let pages = document.getElementsByClassName('page');
     let pagesArr = Array.prototype.slice.call( pages );
     pagesArr.forEach(page => {
-        // page.style.display = "none";
         page.classList.add("displayNone");
     });
     let node = document.querySelector(`.${hash}`)
@@ -23,4 +22,15 @@ function changePage(hash) {
     })
     let link = document.querySelector(`.${hash}-link`);
     link.classList.add('activeLink');
+
+}
+
+function loadHomePage() {
+    changePage("home");
+}
+
+function loadPage(hash) {
+    changePage(hash);
+    const listIcon = document.querySelector("#list-icon");
+    listIcon.click();
 }

@@ -1,0 +1,92 @@
+nav {
+    padding: 40px 0;
+    /* margin: 20px 0; */
+}
+
+.title {
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.list {
+    list-style: none;
+    float: right;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    /* margin-right: 10px; */
+}
+
+.list-item {
+    margin: 5px 8px;
+    /* display: inline-block; */
+}
+
+nav a {
+    color: inherit;
+}
+
+.list-item.activeLink {
+    color: var(--secondary-color);
+}
+
+#list-checkbox {
+    display: none;
+}
+
+#list-icon {
+    font-size: 2.4rem;
+    float: right;
+    margin-top: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+@media( max-width: 1140px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media( max-width: 850px) {
+    .container {
+        width: 92vw;
+    }
+}
+
+@media(max-width: 725px) {
+    nav{
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .list {
+        transition: 0.25s;
+        left: -150vw;
+        display: block;
+        float: none;
+        position: fixed;
+        width: 100vw;
+        background-color: var(--primary-color);
+        height: 100%;
+        margin-top: 42px;
+        padding: 0;
+    }
+
+    .list-item {
+        text-align: center;
+        padding: 10px;
+    }
+
+    #list-icon {
+        display: block;
+    }
+
+    #list-checkbox:checked ~ nav .list {
+        left: 0;
+    }
+    
+    #list-checkbox:checked ~ .container main.page {
+        display: none;
+    }
+}

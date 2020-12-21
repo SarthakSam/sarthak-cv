@@ -40,33 +40,6 @@ h2 {
     flex: 1 0 auto
 }
 
-header {
-    padding: 10px;
-}
-
-.title {
-    display: inline-block;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-
-.list-item {
-    margin: 5px 8px;
-}
-
-header a {
-    color: inherit;
-}
-
-.nav {
-    display: inline-block;
-}
-
 main {
     padding: 10px;
 }
@@ -108,10 +81,6 @@ footer {
 
 .displayNone {
     display: none !important;
-}
-
-.list-item.activeLink {
-    color: var(--secondary-color);
 }
 
 .contact-me-item .follow-me-icons i{
