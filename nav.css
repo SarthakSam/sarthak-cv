@@ -39,6 +39,7 @@ nav a {
     float: right;
     margin-top: 5px;
     display: none;
+    cursor: pointer;
 }
 
 @media( max-width: 1140px) {
@@ -54,6 +55,11 @@ nav a {
 }
 
 @media(max-width: 725px) {
+    nav{
+        background-color: var(--primary-color);
+        color: white;
+    }
+
     .list {
         transition: 0.25s;
         left: -150vw;
@@ -63,13 +69,12 @@ nav a {
         width: 100vw;
         background-color: var(--primary-color);
         height: 100%;
-        margin-top: 50px;
+        margin-top: 42px;
         padding: 0;
     }
 
     .list-item {
         text-align: center;
-        color: white;
         padding: 10px;
     }
 
@@ -77,7 +82,11 @@ nav a {
         display: block;
     }
 
-    #list-checkbox:checked ~ .list {
+    #list-checkbox:checked ~ nav .list {
         left: 0;
-    }   
+    }
+    
+    #list-checkbox:checked ~ .container main.page {
+        display: none;
+    }
 }
